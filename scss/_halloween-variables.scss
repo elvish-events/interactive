@@ -1,0 +1,88 @@
+@import "bootstrap/scss/functions";
+
+// Color System
+$white:    #FFE9DB;
+$black:    #000;
+$gray-500: mix($white, $black);
+$gray-100: tint-color($gray-500, 80%) !default;
+$gray-200: tint-color($gray-500, 60%) !default;
+$gray-300: tint-color($gray-500, 40%) !default;
+$gray-400: tint-color($gray-500, 20%) !default;
+$gray-600: shade-color($gray-500, 20%) !default;
+$gray-700: shade-color($gray-500, 40%) !default;
+$gray-800: shade-color($gray-500, 60%) !default;
+$gray-900: shade-color($gray-500, 80%) !default;
+
+$blue:   #0086AB;
+$orange: #F65900;
+
+$blue-gradient: radial-gradient(circle, #4994d0 0%, #0093cd 27%, #0086ab 55%, #01667c 77%, #071f31 100%);
+
+$primary: $orange;
+
+// Body
+$body-bg:          $blue;
+$body-bg-gradient: $blue-gradient;
+$body-color:       $white;
+$body-text-align:  center;
+
+// Typography
+$font-family-cursive: "Freckle Face", cursive;
+$font-family-base:    $font-family-cursive;
+
+//
+// Custom styles
+//
+
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
+
+body {
+  background: $body-bg-gradient;
+
+  > .block-background-a {
+    background-image: url('../img/events/hn/trees.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+  > .block-background-b {
+    background-image: url('../img/events/hn/webs.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+  > .block-background-c {
+    background-image: url('../img/events/hn/bats.png');
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: contain;
+  }
+}
+
+.block-question {
+  height: 60vh;
+
+  .block-background-a {
+    background-image: url('../img/events/hn/sil.png');
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    background-size: 100%;
+  }
+}
+
+.block-answer {
+  height: 40vh;
+
+  form {
+    background-image: url('../img/events/hn/highlight.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  input {
+    text-align: center;
+  }
+}

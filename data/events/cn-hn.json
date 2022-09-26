@@ -1,0 +1,97 @@
+{
+    "title": "Trick or Treat",
+    "questions": {
+        "oe": {
+            "question": {
+                "text": "Which animals are most commonly associated with witches?"
+            },
+            "answer": {
+                "value": "Black Cats",
+                "regexp": "^(\\s*(Black){0,1}\\s*(Cat(s){0,1}){1}\\s*){1}$"
+            }
+        },
+        "te": {
+            "question": {
+                "text": "What Disney film portrays the celebration of Mexico’s Day of the Dead?",
+                "html": "What Disney film portrays the celebration of Mexico’s<br><span class='text-primary'>Day of the Dead?</span>"
+            },
+            "answer": {
+                "value": "Coco",
+                "regexp": "(^\\s*(Coco){1}\\s*){1}$"
+            }
+        },
+        "tr": {
+            "question": {
+                "text": "Which animated character from The Nightmare Before Christmas film is also known as Pumpkin King?",
+                "html": "Which animated character from<br><span class='text-primary'>The Nightmare Before Christmas</span><br>film is also known as<br><span class='text-primary'>Pumpkin King</span>?"
+            },
+            "answer": {
+                "value": "Jack Skellington",
+                "regexp": "^(\\s*(Jack){1}\\s*((S){1}(ke(l){1,2}ington){0,1}){0,1}\\s*){1}$"
+            }
+        },
+        "fr": {
+            "question": {
+                "text": "In which iconic Halloween film would you hear the song I Put a Spell On You?",
+                "html": "In which iconic Halloween film would you hear the song<br><span class='text-primary'>I Put a Spell On You</span>?"
+            },
+            "answer": {
+                "value": "Hocus Pocus",
+                "regexp": "^(\\s*(Hocus){1}\\s*(Pocus){1}\\s*){1}$"
+            }
+        },
+        "fe": {
+            "question": {
+                "text": "Vampire bats solely feed on blood?"
+            },
+            "answer": {
+                "value": true
+            }
+        },
+        "sx": {
+            "question": {
+                "text": "What C is a group of witches called?"
+            },
+            "answer": {
+                "value": "Coven",
+                "regexp": "^(\\s*(Coven){1}\\s*){1}$"
+            }
+        },
+        "sn": {
+            "question": {
+                "text": "Which magical school celebrates Halloween with a feast in the Great Hall?"
+            },
+            "answer": {
+                "value": "Hogwarts",
+                "regexp": "^(\\s*(Hogwarts){1}\\s*){1}$"
+            }
+        },
+        "et": {
+            "question": {
+                "text": "What S is the name of the popular teenage witch?"
+            },
+            "answer": {
+                "value": "Sabrina",
+                "regexp": "^(\\s*(Sabrina){1}\\s*){1}$"
+            }
+        },
+        "ne": {
+            "question": {
+                "text": "Which fruits would you traditionally bob for at Halloween parties?"
+            },
+            "answer": {
+                "value": "Apples",
+                "regexp": "^(\\s*(Apple(s){0,1}){1}\\s*){1}$"
+            }
+        },
+        "tn": {
+            "question": {
+                "text": "What howling creature might someone turn into during a full moon?"
+            },
+            "answer": {
+                "value": "Werewolf",
+                "regexp": "^(\\s*(Werewolf){1}\\s*){1}$"
+            }
+        }
+    }
+}

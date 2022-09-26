@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Elvish Events</title>
+    <script>
+      const urlSearchParams = new URLSearchParams(window.location.search);
+      const locationId = urlSearchParams.get('l') || 'cn';
+      const eventId = urlSearchParams.get('e') || 'hn';
+      const questionId = urlSearchParams.get('q');
+
+      let error = false;
+
+      if (!questionId) error = true;
+
+      let evnt = {
+        title: '',
+        questions: {}
+      };
+
+      fetch(`data/events/${locationId}-${eventId}.json`).then(response => {
+        if (!response.ok) error = true;
+
+        return data = response.json();
+      }).then(data => {
+        if (!data.questions[questionId]) error = true
+
+        evnt = data
+      });
+    </script>
+  </head>
+  <body>
+    <div class="block block-question block-transparent">
+      <div class="block-foreground">
+        <h1 id="question" class="display-1"></h1>
+      </div>
+      <div class="block-background block-background-a"></div>
+      <div class="block-background block-background-b"></div>
+      <div class="block-background block-background-c"></div>
+    </div>
+
+    <div class="block block-answer" style="background-color: var(--bs-black);">
+      <div class="block-foreground">
+        <form id="answer" class="needs-validation p-3">
+          <div class="mb-3">
+            <label for="value" class="form-label visually-hidden">Answer</label>
+            <input type="text" class="form-control form-control-lg" id="value" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="block-background block-background-a"></div>
+      <div class="block-background block-background-b"></div>
+      <div class="block-background block-background-c"></div>
+    </div>
+
+    <div class="block-background block-background-a"></div>
+    <div class="block-background block-background-b"></div>
+    <div class="block-background block-background-c"></div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
