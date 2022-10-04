@@ -18,9 +18,9 @@
     "test": "npm-run-all css-lint css"
   },
   "dependencies": {
+    "@epickris/bootstrap-kit": "^2.0.2",
     "@popperjs/core": "^2.11.6",
-    "bootstrap": "^5.2.1",
-    "@epickris/bootstrap-kit": "^2.0.2"
+    "bootstrap": "^5.2.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",
