@@ -29,7 +29,7 @@
     "postcss": "^8.4.17",
     "postcss-cli": "^9.1.0",
     "sass": "^1.54.8",
-    "serve": "^13.0.4",
+    "serve": "^14.0.1",
     "stylelint": "^14.13.0",
     "stylelint-config-twbs-bootstrap": "^6.0.0"
   }
