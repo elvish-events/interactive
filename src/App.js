@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react';
+import YouTube from 'react-youtube';
 
 function App() {
   const [loading, setLoading] = useState(true);
-  const [question, setQuestion] = useState();
-  const [answer, setAnswer] = useState();
+  const [question, setQuestion] = useState({});
+  const [answer, setAnswer] = useState({});
   const [value, setValue] = useState('');
-  const [correct, setCorrect] = useState();
+  const [musicTarget, setMusicTarget] = useState(null);
+  const [correct, setCorrect] = useState(undefined);
 
   const urlSearchParams = new URLSearchParams(window.location.search);
   const locationKey = urlSearchParams.get('l') || 'cn';
@@ -22,22 +24,40 @@ function App() {
       .finally(() => setLoading(false));
   }, [locationKey, eventKey, questionKey]);
 
+  useEffect(() => {
+    if (correct && musicTarget) {
+      if (answer.musicId) {
+        musicTarget.loadVideoById(answer.musicId);
+      }
+      musicTarget.playVideo();
+    }
+  }, [correct, answer, musicTarget]);
+
+  function handleReady(event) {
+    setMusicTarget(event.target);
+  }
+
+  function handleFocus () {
+    if (musicTarget) musicTarget.playVideo();
+  }
+
+  function handleChange (event) {
+    setValue(event.target.value);
+
+    if (musicTarget) musicTarget.playVideo();
+  }
+
   function handleSubmit (event) {
     event.preventDefault();
     
     const regexp = new RegExp(answer.regexp, 'i');
-
     const correct = regexp.test(value);
 
     setCorrect(correct);
   }
 
-  function handleChange (event) {
-    setValue(event.target.value);
-  }
-
   return (
-    <div className="App">
+    <div className="App" onClick={handleFocus}>
       <div className="block block-question block-transparent">
         <div className="block-foreground">
           {loading ? (
@@ -65,7 +85,7 @@ function App() {
             <form className="needs-validation p-3" onSubmit={handleSubmit}>
               <div className="mb-3">
                 <label htmlFor="value" className="form-label visually-hidden">Answer</label>
-                <input type="text" className={'form-control form-control-lg' + (correct === false ? ' is-invalid' : '')} id="value" value={value} onChange={handleChange} required />
+                <input type="text" className={'form-control form-control-lg' + (correct === false ? ' is-invalid' : null)} id="value" value={value} onChange={handleChange} required />
               </div>
               <button type="submit" className="btn btn-primary">Submit</button>
             </form>
@@ -75,6 +95,19 @@ function App() {
         <div className="block-background block-background-b" />
         <div className="block-background block-background-c" />
       </div>
+
+      {!loading && (question.musicId || answer.musicId) ? (
+        <YouTube
+          videoId={correct ? answer.musicId || question.musicId || '' : question.musicId || ''}
+          opts={{
+            playerVars: {
+              autoplay: 1
+            }
+          }}
+          className="visually-hidden"
+          onReady={handleReady}
+        />
+      ) : null}
 
       <div className="block-background block-background-a" />
       <div className="block-background block-background-b" />

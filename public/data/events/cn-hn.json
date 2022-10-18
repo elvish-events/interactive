@@ -3,41 +3,49 @@
     "questions": {
         "oe": {
             "question": {
-                "text": "Which animals are most commonly associated with witches?"
+                "text": "Which animals are most commonly associated with witches?",
+                "musicId": "2-GTXC9PRvo"
             },
             "answer": {
                 "value": "Black Cats",
-                "regexp": "^(\\s*(Black){0,1}\\s*(Cat(s){0,1}){1}\\s*){1}$"
+                "regexp": "^(\\s*(Black){0,1}\\s*(Cat(s){0,1}){1}\\s*){1}$",
+                "musicId": "JySKE3kDW9I"
             }
         },
         "te": {
             "question": {
                 "text": "What Disney film portrays the celebration of Mexico’s Day of the Dead?",
-                "html": "What Disney film portrays the celebration of Mexico’s<br><span class='text-primary'>Day of the Dead?</span>"
+                "html": "What Disney film portrays the celebration of Mexico’s<br><span class='text-primary'>Day of the Dead?</span>",
+                "musicId": "GfMuZMBVJkQ"
             },
             "answer": {
                 "value": "Coco",
-                "regexp": "(^\\s*(Coco){1}\\s*){1}$"
+                "regexp": "(^\\s*(Coco){1}\\s*){1}$",
+                "musicId": "y4hnrrlokwk"
             }
         },
         "tr": {
             "question": {
                 "text": "Which animated character from The Nightmare Before Christmas film is also known as Pumpkin King?",
-                "html": "Which animated character from<br><span class='text-primary'>The Nightmare Before Christmas</span><br>film is also known as<br><span class='text-primary'>Pumpkin King</span>?"
+                "html": "Which animated character from<br><span class='text-primary'>The Nightmare Before Christmas</span><br>film is also known as<br><span class='text-primary'>Pumpkin King</span>?",
+                "musicId": "0ZFrQ15iGOo"
             },
             "answer": {
                 "value": "Jack Skellington",
-                "regexp": "^(\\s*(Jack){1}\\s*((S){1}(ke(l){1,2}ington){0,1}){0,1}\\s*){1}$"
+                "regexp": "^(\\s*(Jack){1}\\s*((S){1}(ke(l){1,2}ington){0,1}){0,1}\\s*){1}$",
+                "musicId": "s87moCuLxzw"
             }
         },
         "fr": {
             "question": {
                 "text": "In which iconic Halloween film would you hear the song I Put a Spell On You?",
-                "html": "In which iconic Halloween film would you hear the song<br><span class='text-primary'>I Put a Spell On You</span>?"
+                "html": "In which iconic Halloween film would you hear the song<br><span class='text-primary'>I Put a Spell On You</span>?",
+                "musicId": "ZnVLGF6FDtA"
             },
             "answer": {
                 "value": "Hocus Pocus",
-                "regexp": "^(\\s*(Hocus){1}\\s*(Pocus){1}\\s*){1}$"
+                "regexp": "^(\\s*(Hocus){1}\\s*(Pocus){1}\\s*){1}$",
+                "musicId": "dP9rdbpZ21Q"
             }
         },
         "fe": {
@@ -50,29 +58,35 @@
         },
         "sx": {
             "question": {
-                "text": "What C is a group of witches called?"
+                "text": "What C is a group of witches called?",
+                "musicId": "2-GTXC9PRvo"
             },
             "answer": {
                 "value": "Coven",
-                "regexp": "^(\\s*(Coven){1}\\s*){1}$"
+                "regexp": "^(\\s*(Coven){1}\\s*){1}$",
+                "musicId": "1OXHg_16wV4"
             }
         },
         "sn": {
             "question": {
-                "text": "Which magical school celebrates Halloween with a feast in the Great Hall?"
+                "text": "Which magical school celebrates Halloween with a feast in the Great Hall?",
+                "musicId": "eeSTCiouLEI"
             },
             "answer": {
                 "value": "Hogwarts",
-                "regexp": "^(\\s*(Hogwarts){1}\\s*){1}$"
+                "regexp": "^(\\s*(Hogwarts){1}\\s*){1}$",
+                "musicId": "r9sZeEo9vRE"
             }
         },
         "et": {
             "question": {
-                "text": "What S is the name of the popular teenage witch?"
+                "text": "What S is the name of the popular teenage witch?",
+                "musicId": "Bo0hL1sq7ls"
             },
             "answer": {
                 "value": "Sabrina",
-                "regexp": "^(\\s*(Sabrina){1}\\s*){1}$"
+                "regexp": "^(\\s*(Sabrina){1}\\s*){1}$",
+                "musicId": "Bo0hL1sq7ls"
             }
         },
         "ne": {
