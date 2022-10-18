@@ -7,10 +7,6 @@ on:
   pull_request:
   workflow_dispatch:
 
-env:
-  FORCE_COLOR: 2
-  NODE: 16
-
 permissions:
   contents: read
   pages: write
@@ -28,7 +24,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ env.NODE }}
+          node-version: 16
           cache: npm
 
       - name: Install npm dependencies
@@ -36,26 +32,3 @@ jobs:
       
       - name: Run build
         run: npm run build
-
-  deploy:
-    name: Deploy
-    runs-on: ubuntu-latest
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    needs: run
-
-    steps:
-      - name: Setup Pages
-        uses: actions/configure-pages@v2
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: './build'
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
