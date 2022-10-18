@@ -38,7 +38,9 @@ $font-family-base:    $font-family-cursive;
 
 body {
   background: $body-bg-gradient;
+}
 
+.App {
   > .block-background-a {
     background-image: url('../img/events/hn/trees.png');
     background-position: center top;
