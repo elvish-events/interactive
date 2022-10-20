@@ -50,10 +50,12 @@
         },
         "fe": {
             "question": {
-                "text": "Vampire bats solely feed on blood?"
+                "text": "Vampire bats solely feed on blood?",
+                "musicId": "iOABcxnk0jg"
             },
             "answer": {
-                "value": true
+                "value": true,
+                "musicId": "mfHQb8FAKnY"
             }
         },
         "sx": {
@@ -100,11 +102,13 @@
         },
         "tn": {
             "question": {
-                "text": "What howling creature might someone turn into during a full moon?"
+                "text": "What howling creature might someone turn into during a full moon?",
+                "musicId": "TOb2Qzpe4OQ"
             },
             "answer": {
                 "value": "Werewolf",
-                "regexp": "^(\\s*(Werewolf){1}\\s*){1}$"
+                "regexp": "^(\\s*(Werewolf){1}\\s*){1}$",
+                "musicId": "bR17f-FpTZA"
             }
         }
     }
