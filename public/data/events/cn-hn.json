@@ -93,11 +93,13 @@
         },
         "ne": {
             "question": {
-                "text": "Which fruits would you traditionally bob for at Halloween parties?"
+                "text": "Which fruits would you traditionally bob for at Halloween parties?",
+                "musicId": "6KBz7OW77Cs"
             },
             "answer": {
                 "value": "Apples",
-                "regexp": "^(\\s*(Apple(s){0,1}){1}\\s*){1}$"
+                "regexp": "^(\\s*(Apple(s){0,1}){1}\\s*){1}$",
+                "musicId": "Olh3WBb3aZo"
             }
         },
         "tn": {
