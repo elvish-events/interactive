@@ -65,7 +65,7 @@ function App() {
               <span className="visually-hidden">Loading&hellip;</span>
             </div>
           ) : (
-            <h1 className="display-1" dangerouslySetInnerHTML={{__html: correct ? answer.value : question.html || question.text}} />
+            <h1 className="display-1" dangerouslySetInnerHTML={{__html: correct ? answer.html || answer.value : question.html || question.text}} />
           )}
         </div>
 

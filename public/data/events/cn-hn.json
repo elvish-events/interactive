@@ -21,6 +21,7 @@
             },
             "answer": {
                 "value": "Coco",
+                "html": "<img src='img/events/hn/coco.png' class='img-fluid' alt='Disney Pixar Coco' />",
                 "regexp": "(^\\s*(Coco){1}\\s*){1}$",
                 "musicId": "y4hnrrlokwk"
             }
@@ -34,7 +35,8 @@
             "answer": {
                 "value": "Jack Skellington",
                 "regexp": "^(\\s*(Jack){1}\\s*((S){1}(ke(l){1,2}ington){0,1}){0,1}\\s*){1}$",
-                "musicId": "s87moCuLxzw"
+                "musicId": "s87moCuLxzw",
+                "img": "jack-skellington.png"
             }
         },
         "fr": {
@@ -45,6 +47,7 @@
             },
             "answer": {
                 "value": "Hocus Pocus",
+                "html": "<img src='img/events/hn/hocus-pocus.png' class='img-fluid' alt='Disney Hocus Pocus' />",
                 "regexp": "^(\\s*(Hocus){1}\\s*(Pocus){1}\\s*){1}$",
                 "musicId": "dP9rdbpZ21Q"
             }
@@ -88,6 +91,7 @@
             },
             "answer": {
                 "value": "Sabrina",
+                "html": "<img src='img/events/hn/sabrina.png' class='img-fluid' alt='N Series Chilling Adventures of Sabrina' />",
                 "regexp": "^(\\s*(Sabrina){1}\\s*){1}$",
                 "musicId": "Bo0hL1sq7ls"
             }
@@ -100,7 +104,8 @@
             "answer": {
                 "value": "Apples",
                 "regexp": "^(\\s*(Apple(s){0,1}){1}\\s*){1}$",
-                "musicId": "Olh3WBb3aZo"
+                "musicId": "Olh3WBb3aZo",
+                "img": "apple.svg"
             }
         },
         "tn": {
