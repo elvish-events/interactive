@@ -68,29 +68,37 @@ function App() {
             <h1 className="display-1" dangerouslySetInnerHTML={{__html: correct ? answer.value : question.html || question.text}} />
           )}
         </div>
+
         <div className="block-background block-background-a" />
         <div className="block-background block-background-b" />
         <div className="block-background block-background-c" />
+
+        {correct && answer.img ? (
+          <div className="block-background block-background-answer" style={{backgroundImage: `url(img/events/${eventKey}/${answer.img})`}} />
+        ) : null}
       </div>
 
       <div className="block block-answer" style={{backgroundColor: 'var(--bs-black)'}}>
-        <div className="block-foreground">
-          {loading ? (
-            <div className="spinner-grow" role="status">
-              <span className="visually-hidden">Loading&hellip;</span>
-            </div>
-          ) : correct ? (
-            <h2 className="display-2 text-success">Correct!</h2>
-          ) : (
-            <form className="needs-validation p-3" onSubmit={handleSubmit}>
-              <div className="mb-3">
-                <label htmlFor="value" className="form-label visually-hidden">Answer</label>
-                <input type="text" className={'form-control form-control-lg' + (correct === false ? ' is-invalid' : null)} id="value" value={value} onChange={handleChange} required />
+        <div className="block-xs-middle">
+          <div className="block-foreground">
+            {loading ? (
+              <div className="spinner-grow" role="status">
+                <span className="visually-hidden">Loading&hellip;</span>
               </div>
-              <button type="submit" className="btn btn-primary">Submit</button>
-            </form>
-          )}
+            ) : correct ? (
+              <h2 className="display-2 text-success">Correct!</h2>
+            ) : (
+              <form className="needs-validation p-3" onSubmit={handleSubmit}>
+                <div className="mb-3">
+                  <label htmlFor="value" className="form-label visually-hidden">Answer</label>
+                  <input type="text" className={`form-control form-control-lg ${correct === false ? 'is-invalid' : null}`} id="value" value={value} onChange={handleChange} required />
+                </div>
+                <button type="submit" className="btn btn-primary">Submit</button>
+              </form>
+            )}
+          </div>
         </div>
+
         <div className="block-background block-background-a" />
         <div className="block-background block-background-b" />
         <div className="block-background block-background-c" />
