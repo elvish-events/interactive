@@ -42,21 +42,21 @@ body {
 
 .App {
   > .block-background-a {
-    background-image: url('../img/events/hn/trees.png');
+    background-image: url('../img/events/hn/trees.svg');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 100%;
   }
   
   > .block-background-b {
-    background-image: url('../img/events/hn/webs.png');
+    background-image: url('../img/events/hn/webs.svg');
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: 100%;
   }
   
   > .block-background-c {
-    background-image: url('../img/events/hn/bats.png');
+    background-image: url('../img/events/hn/bats.svg');
     background-position: center center;
     background-repeat: repeat;
     background-size: contain;
@@ -64,21 +64,31 @@ body {
 }
 
 .block-question {
+  display: table;
   height: 60vh;
 
   .block-background-a {
-    background-image: url('../img/events/hn/sil.png');
+    background-image: url('../img/events/hn/sil.svg');
     background-position: center bottom;
     background-repeat: repeat-x;
     background-size: 100%;
   }
+
+  .block-background-answer {
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 20vh;
+    bottom: -10vh;
+  }
 }
 
 .block-answer {
+  display: table;
   height: 40vh;
 
   form {
-    background-image: url('../img/events/hn/highlight.png');
+    background-image: url('../img/events/hn/highlight.svg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
