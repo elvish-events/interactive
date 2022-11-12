@@ -43,7 +43,7 @@
     "postcss": "^8.4.18",
     "postcss-cli": "^10.0.0",
     "sass": "^1.56.0",
-    "serve": "^14.0.1",
+    "serve": "^14.1.1",
     "stylelint": "^14.14.1",
     "stylelint-config-twbs-bootstrap": "^6.0.0"
   },
