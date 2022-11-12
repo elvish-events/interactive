@@ -45,7 +45,7 @@
     "sass": "^1.56.0",
     "serve": "^14.0.1",
     "stylelint": "^14.14.1",
-    "stylelint-config-twbs-bootstrap": "^6.0.0"
+    "stylelint-config-twbs-bootstrap": "^7.0.0"
   },
   "eslintConfig": {
     "extends": [
