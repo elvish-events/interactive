@@ -27,7 +27,7 @@ jobs:
           cache: npm
 
       - name: Setup Pages
-        uses: actions/configure-pages@v2
+        uses: actions/configure-pages@v3
       
       - name: Install npm dependencies
         run: npm ci
