@@ -34,31 +34,31 @@ $font-family-base:    $font-family-cursive;
 // Custom styles
 //
 
-@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap');
+@import 'https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap';
 
 body {
   background: $body-bg-gradient;
 }
 
-.App {
+.app {
   > .block-background-a {
     background-image: url('../img/events/hn/trees.svg');
-    background-position: center top;
     background-repeat: no-repeat;
+    background-position: center top;
     background-size: 100%;
   }
   
   > .block-background-b {
     background-image: url('../img/events/hn/webs.svg');
-    background-position: center bottom;
     background-repeat: no-repeat;
+    background-position: center bottom;
     background-size: 100%;
   }
   
   > .block-background-c {
     background-image: url('../img/events/hn/bats.svg');
-    background-position: center center;
     background-repeat: repeat;
+    background-position: center center;
     background-size: contain;
   }
 }
@@ -68,19 +68,19 @@ body {
   height: 60vh;
 
   .block-background-a {
-    background-image: url('../img/events/hn/sil.svg');
-    background-position: center bottom;
-    background-repeat: repeat-x;
-    background-size: 100%;
     bottom: -1px;
+    background-image: url('../img/events/hn/sil.svg');
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    background-size: 100%;
   }
 
   .block-background-answer {
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
     top: 20vh;
     bottom: -10vh;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
   }
 }
 
@@ -90,8 +90,8 @@ body {
 
   form {
     background-image: url('../img/events/hn/highlight.svg');
-    background-position: center center;
     background-repeat: no-repeat;
+    background-position: center center;
     background-size: 100% 100%;
   }
 
