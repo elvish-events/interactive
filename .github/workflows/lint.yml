@@ -16,4 +16,4 @@ jobs:
       - name: Build
         run: npm run build
       - name: Eslint
-        run: npm run eslint -- --max-warnings 0
+        run: npm run css-lint
