@@ -44,7 +44,7 @@
     "postcss-cli": "^10.1.0",
     "sass": "^1.62.1",
     "serve": "^14.2.0",
-    "stylelint": "^15.6.1",
+    "stylelint": "^15.9.0",
     "stylelint-config-twbs-bootstrap": "^9.0.1"
   },
   "eslintConfig": {
