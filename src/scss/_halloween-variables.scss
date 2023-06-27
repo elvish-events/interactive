@@ -1,7 +1,7 @@
 @import "bootstrap/scss/functions";
 
 // Color System
-$white:    #FFE9DB;
+$white:    ##ffe9db;
 $black:    #000;
 $gray-500: mix($white, $black);
 $gray-100: tint-color($gray-500, 80%) !default;
@@ -13,8 +13,8 @@ $gray-700: shade-color($gray-500, 40%) !default;
 $gray-800: shade-color($gray-500, 60%) !default;
 $gray-900: shade-color($gray-500, 80%) !default;
 
-$blue:   #0086AB;
-$orange: #F65900;
+$blue:   ##0086ab;
+$orange: ##f65900;
 
 $blue-gradient: radial-gradient(circle, #4994d0 0%, #0093cd 27%, #0086ab 55%, #01667c 77%, #071f31 100%);
 
@@ -34,7 +34,7 @@ $font-family-base:    $font-family-cursive;
 // Custom styles
 //
 
-@import 'https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap';
+@import "https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap";
 
 body {
   background: $body-bg-gradient;
@@ -42,21 +42,21 @@ body {
 
 .app {
   > .block-background-a {
-    background-image: url('../img/events/hn/trees.svg');
+    background-image: url("../img/events/hn/trees.svg");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100%;
   }
   
   > .block-background-b {
-    background-image: url('../img/events/hn/webs.svg');
+    background-image: url("../img/events/hn/webs.svg");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 100%;
   }
   
   > .block-background-c {
-    background-image: url('../img/events/hn/bats.svg');
+    background-image: url("../img/events/hn/bats.svg");
     background-repeat: repeat;
     background-position: center center;
     background-size: contain;
@@ -69,7 +69,7 @@ body {
 
   .block-background-a {
     bottom: -1px;
-    background-image: url('../img/events/hn/sil.svg');
+    background-image: url("../img/events/hn/sil.svg");
     background-repeat: repeat-x;
     background-position: center bottom;
     background-size: 100%;
@@ -89,7 +89,7 @@ body {
   height: 40vh;
 
   form {
-    background-image: url('../img/events/hn/highlight.svg');
+    background-image: url("../img/events/hn/highlight.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
